@@ -1,0 +1,141 @@
+/* Reset property */
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+body {
+  font-family: Arial;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Heading content */
+.heading {
+  color: white;
+  display: flex;
+  justify-content: center;
+  background-color: #1abc9c;
+}
+.heading-content {
+  margin: 70px;
+}
+.heading-content h2 {
+  font-size: 25px;
+}
+
+/* Links */
+.links {
+  background-color: #333;
+  display: flex;
+}
+.links a {
+  /* display: inline-block; */
+  /* line-height: 40px; */
+  color: white;
+  padding: 20px;
+}
+.links a:hover {
+  color: black;
+  background-color: #ddd;
+}
+/* Main */
+main {
+  display: flex;
+  flex-direction: row;
+}
+.about {
+  background-color: #f1f1f1;
+  width: 40%;
+}
+
+/* Main about */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  /* justify-content:center; */
+}
+.about-content h2 {
+  margin: 20px auto;
+  width: 90%;
+}
+/* .about-content h2, */
+.about-content h4 {
+  width: 90%;
+  margin: 0px auto 20px auto;
+  margin-bottom: 20px;
+}
+.about-content img {
+  margin: auto;
+  display: block;
+  height: 200px;
+  width: 90%;
+  justify-content: center;
+  background-color: #aaa;
+}
+
+.about-content p {
+  width: 90%;
+  margin: auto;
+  margin: 20px auto;
+}
+
+.about-more h2 {
+  width: 90%;
+  margin: auto;
+}
+.about-more p {
+  width: 90%;
+  margin: 20px auto;
+}
+.about-more img {
+  width: 90%;
+  margin: 20px auto;
+  height: 100px;
+  display: block;
+  background-color: #aaa;
+}
+/* Content */
+.content_1 {
+  display: flex;
+  flex-direction: column;
+}
+.content_1 h2 {
+  width: 95%;
+  margin: 20px auto;
+}
+.content_1 h4,
+.content_1 img,
+.content_1 p {
+  width: 95%;
+  margin: 0px auto 20px auto;
+}
+.content_1 img {
+  /* margin: 0px auto; */
+  display: block;
+  height: 200px;
+  width: 95%;
+  background-color: #aaa;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dddddd;
+  height: 150px;
+  width: 100%;
+}
+@media screen and (max-width:500px) {
+  .links{
+    flex-direction: column;
+  }
+}
+@media screen and (max-width:900px){
+
+  main{
+    flex-direction: column;
+  }
+  .about{
+    width: 100%;
+  }
+}
